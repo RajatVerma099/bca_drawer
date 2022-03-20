@@ -1,0 +1,42 @@
+name: mcq
+description: A new Flutter project.
+
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  animated_splash_screen: ^1.0.0+1
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  url_launcher: ^6.0.9
+  syncfusion_flutter_pdfviewer: ^19.1.69-beta
+
+  provider: ^6.0.1
+
+
+
+  flutter_lints: ^1.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+
+    - img/infinity.gif
