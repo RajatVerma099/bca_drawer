@@ -1,12 +1,17 @@
+//import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+//import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'DBMS.dart';
 import 'cn.dart';
 import 'java.dart';
+import 'login_screen.dart';
 import 'nm.dart';
 
-void main() {
+Future <void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -24,7 +29,7 @@ class MyApp extends StatelessWidget {
         "nm": (context) => nm(),
         //  "/sem1": (context) => Semester_1(),
       },
-      title: 'Flutter Demo',
+      title: 'lost_poet_099_',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
@@ -33,7 +38,9 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.black,
       duration: 2000,
 
-      nextScreen:  MyHomePage(title: 'Notes App for 6th Sem.'),
+      nextScreen: LoginScreen()
+          //MyHomePage(title: 'Notes App for 6th Sem.'
+
       ),
 
     );
@@ -50,8 +57,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    debugShowCheckedModeBanner:
-    false;
+  //  debugShowCheckedModeBanner:    false;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -67,25 +73,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   const SizedBox(height: 30),
                   const SizedBox(height: 24),
                   buildMenuItem(
-                    text: 'DBMS MCQ KPH ',
+                    text: 'Computer Network Security ',//dbms
                     icon: Icons.spa,
                     onClicked: () => selectedItem(context, 0),
                   ),
                   const SizedBox(height: 16),
                   buildMenuItem(
-                    text: 'JAVA MCQ KPH',
+                    text: 'System Analysis and Design',//java
                     icon: Icons.spa,
                     onClicked: () => selectedItem(context, 1),
                   ),
                   const SizedBox(height: 16),
                   buildMenuItem(
-                    text: 'Comp. Network MCQ KPH',
+                    text: 'E-Commerce',//cn
                     icon: Icons.spa,
                     onClicked: () => selectedItem(context, 2),
                   ),
                   const SizedBox(height: 16),
                   buildMenuItem(
-                    text: 'Numerical Methods MCQ KPH',
+                    text: 'Knowledge Management',//nm
                     icon: Icons.spa,
                     onClicked: () => selectedItem(context, 3),
                   ),

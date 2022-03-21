@@ -13,12 +13,12 @@ class java extends StatelessWidget {
               color: Colors.blueGrey,
               icon: Icon(Icons.arrow_back, color: Colors.black87),
               onPressed: () => Navigator.popAndPushNamed(context, '/')),
-          title: Text('JAVA KPH :)'),
+          title: Text('System Analysis and Design :)'),
           centerTitle: true,
           backgroundColor: Colors.blueGrey,
         ),
         body: Container(
             child: SfPdfViewer.network(
-                'https://drive.google.com/uc?export=view&id=1mrJLs9P5Sn_DlqylAs32XnhM5yyQzfHn')),
+                'https://drive.google.com/uc?export=view&id=1NCDuMjxXG7nW0rmRF-KUjo4L88fmgiww')),
       );
 }

@@ -13,12 +13,12 @@ class cn extends StatelessWidget {
               color: Colors.blueGrey,
               icon: Icon(Icons.arrow_back, color: Colors.black87),
               onPressed: () => Navigator.popAndPushNamed(context, '/')),
-          title: Text('CN KPH :)'),
+          title: Text('E-Commerce :)'),
           centerTitle: true,
           backgroundColor: Colors.blueGrey,
         ),
         body: Container(
             child: SfPdfViewer.network(
-                'https://drive.google.com/uc?export=view&id=1nAprxnLSa3WslP4eqgmd3Vb7lkQa6tlN')),
+                'https://drive.google.com/uc?export=view&id=1NbLf-3dR-4l118fbJmdsYg8UFSpGJraO')),
       );
 }
