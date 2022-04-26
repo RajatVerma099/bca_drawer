@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182022139452",
+    "project_id": "rvrox-34750",
+    "storage_bucket": "rvrox-34750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182022139452:android:84b0abf9545a6621f71d39",
+        "android_client_info": {
+          "package_name": "com.example.untitled1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182022139452-jp642726apauv6mfl8j4oeiq4012mdg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFPMurn6rJaFGW0lDusgesoXTUN0ictOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182022139452-jp642726apauv6mfl8j4oeiq4012mdg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

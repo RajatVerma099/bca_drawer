@@ -9,6 +9,7 @@ import 'java.dart';
 import 'login_screen.dart';
 import 'nm.dart';
 
+@override
 Future <void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
       duration: 2000,
 
       nextScreen: LoginScreen()
-          //MyHomePage(title: 'Notes App for 6th Sem.'
+        //  MyHomePage(title: 'Notes App for 6th Sem.'),
 
       ),
 
