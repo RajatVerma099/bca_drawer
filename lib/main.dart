@@ -24,11 +24,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/",
-      routes: {
-        //"/": (context) => MyApp(),
-        "nm": (context) => nm(),
-        //  "/sem1": (context) => Semester_1(),
+     initialRoute: "/",
+       routes: {
+        "/2": (context) =>MyHomePage(title: 'Notes App for 6th Sem.'),
       },
       title: 'lost_poet_099_',
       theme: ThemeData(
@@ -39,8 +37,8 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.black,
       duration: 2000,
 
-      nextScreen: LoginScreen()
-        //  MyHomePage(title: 'Notes App for 6th Sem.'),
+      nextScreen: LoginScreen(),
+         // MyHomePage(title: 'Notes App for 6th Sem.'),
 
       ),
 
@@ -53,16 +51,20 @@ class MyHomePage extends StatefulWidget {
   final String title;
   @override
   State<MyHomePage> createState() => _MyHomePageState();
+
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
+
   Widget build(BuildContext context) {
-  //  debugShowCheckedModeBanner:    false;
-    return Scaffold(
-      backgroundColor: Colors.black,
+
+   return Scaffold(
+     backgroundColor: Colors.black,
+     //initialRoute: "/",
+
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("BCA 6th SEM."),
       ),
       body: Center(
         child: ListView(
