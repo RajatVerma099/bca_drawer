@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-
 import 'main.dart';
-
 class java extends StatelessWidget {
   final padding = EdgeInsets.symmetric(horizontal: 60);
   int a=0;
@@ -47,19 +45,19 @@ class java extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 4 (not available)', //cn
+                      text: 'Unit 4 ', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 4),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 5 (not available)', //cn
+                      text: 'Unit 5 ', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 5),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 6 (not available)', //cn
+                      text: 'Unit 6 ', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 6),
                     ),
@@ -218,7 +216,7 @@ class java extends StatelessWidget {
                       'https://drive.google.com/uc?export=view&id=1qhqmievxqzPp_PQy92q0PufL7cVQyhzd')),
             )
         ),
-        );//dbms(),
+        );
         break;
       case 3:
         a = 3;
@@ -255,7 +253,7 @@ class java extends StatelessWidget {
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('UNIT 4 (not available) :)'),
+                title: Text('UNIT 4 :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -263,7 +261,7 @@ class java extends StatelessWidget {
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1CI06QV8Tq7nmDaHqrK8kiLIGEGN6YLTW')),
             )
         ),
         );//dbms(),
@@ -279,7 +277,7 @@ class java extends StatelessWidget {
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text(' UNIT 5 (not available) :)'),
+                title: Text(' UNIT 5 :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -287,7 +285,7 @@ class java extends StatelessWidget {
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1CVetwg-DfcpislVjxkxktR_mhgxpxOE0')),
             )
         ),
         );//dbms(),
@@ -303,7 +301,7 @@ class java extends StatelessWidget {
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text(' UNIT 5 (not available) :)'),
+                title: Text(' UNIT 6 :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -311,7 +309,7 @@ class java extends StatelessWidget {
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1C_nTqWiRQKIS_UTDkiw-eDLDrS2JHCi2')),
             )
         ),
         );//dbms(),

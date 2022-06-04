@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-
 import 'main.dart';
-
 class cn extends StatelessWidget {
   final padding = EdgeInsets.symmetric(horizontal: 60);
-int a=0;
-@override
+  int a=0;
+  @override
   Widget build(BuildContext context) =>
       Scaffold(
         backgroundColor: Colors.black,
@@ -14,13 +12,11 @@ int a=0;
           leading: IconButton(
               color: Colors.blueGrey,
               icon: Icon(Icons.arrow_back, color: Colors.black87),
-            //  onPressed: () => Navigator.popAndPushNamed(context, '/')),
-            onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-          title: Text('E-Commerce :)'),
+              onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
+          title: Text('E Commerce:)'),
           centerTitle: true,
           backgroundColor: Colors.blueGrey,
         ),
-
         body: Center(
           child: ListView(
             children: <Widget>[
@@ -31,66 +27,83 @@ int a=0;
                     const SizedBox(height: 30),
                     const SizedBox(height: 24),
                     buildMenuItem(
-                      text: 'Unit 1 and 2', //dbms
+                      text: 'Unit 1,2 & 3', //dbms
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 1),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 3', //java
+                      text: 'Unit 3 continued', //java
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 2),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 4 (not available)', //cn
+                      text: 'Unit 3', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 3),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 5 (not available)', //nm
+                      text: 'Unit 4 ', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 4),
                     ),
-
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 1 (EC KPH)', //nm
+                      text: 'Unit 5 ', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 5),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 2 (EC KPH)', //nm
+                      text: 'Unit 6 ', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 6),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 3 (EC KPH)', //nm
+                      text: 'Unit 1 KPH', //nm
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 7),
                     ),
+
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 4 (EC KPH)', //nm
+                      text: 'Unit 2 KPH', //nm
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 8),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 5 (EC KPH)', //nm
+                      text: 'Unit 3 KPH', //nm
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 9),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Previous Yr paper', //nm
+                      text: 'Unit 4 KPH', //nm
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 10),
                     ),
-
+                    const SizedBox(height: 16),
+                    buildMenuItem(
+                      text: 'Unit 5 KPH', //nm
+                      icon: Icons.spa,
+                      onClicked: () => selectedItem(context, 11),
+                    ),
+                    const SizedBox(height: 16),
+                    buildMenuItem(
+                      text: 'Unit 6 KPH', //nm
+                      icon: Icons.spa,
+                      onClicked: () => selectedItem(context, 12),
+                    ),
+                    const SizedBox(height: 16),
+                    buildMenuItem(
+                      text: 'Previous Yr paper', //nm
+                      icon: Icons.spa,
+                      onClicked: () => selectedItem(context, 13),
+                    ),
                     Image.asset(
                       "img/bg2.gif",
                       fit: BoxFit.fill,
@@ -102,8 +115,6 @@ int a=0;
           ),
         ),
       );
-
-
   Widget buildHeader({
     required String name,
     required String email,
@@ -136,7 +147,6 @@ int a=0;
           ),
         ),
       );
-
   Widget buildMenuItem({
     required String text,
     required IconData icon,
@@ -144,7 +154,6 @@ int a=0;
   }) {
     final color = Colors.white;
     final hoverColor = Colors.white70;
-
     return ListTile(
       leading: Icon(icon, color: color),
       title: Text(text, style: TextStyle(color: color)),
@@ -152,7 +161,6 @@ int a=0;
       onTap: onClicked,
     );
   }
-
   void selectedItem(BuildContext context, int index) {
     Navigator.of(context).pop();
     switch (index) {
@@ -167,15 +175,14 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('1 & 2 :)'),
-
+                title: Text('UNIT 1 :)'),
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
               ),
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qxef9L9GBFtlbdpQEPmskzMX_Nr6j24J')),
+                      'https://drive.google.com/uc?export=view&id=1qbsrkDFuxwTx0dqSeBLnq4G0DlU0Ozjy')),
             )
         ),
         );//dbms(),
@@ -191,7 +198,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('3 :)'),
+                title: Text('UNIT 2 :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -199,10 +206,10 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qpQ_JNY3yRS8ILdj4o96B4sU98SZ8P0V')),
+                      'https://drive.google.com/uc?export=view&id=1qhqmievxqzPp_PQy92q0PufL7cVQyhzd')),
             )
         ),
-        );//dbms(),
+        );
         break;
       case 3:
         a = 3;
@@ -215,7 +222,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('4 :)'),
+                title: Text('UNIT 3 :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -223,7 +230,7 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1qhtVFDItpznBQ5Rx5SawzKEM-NrSKoPn')),
             )
         ),
         );//dbms(),
@@ -239,7 +246,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('5 :)'),
+                title: Text('UNIT 4:)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -247,7 +254,7 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1MVoId4fkGjMNZGlwWSkmp0AbD4L4fbZk')),
             )
         ),
         );//dbms(),
@@ -263,7 +270,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text(' 1 kph :)'),
+                title: Text(' UNIT 5  :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -271,7 +278,7 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qzTyIYHoD9y7tTCFau636PXPwTxE0Dl2')),
+                      'https://drive.google.com/uc?export=view&id=1MRRTPNDXoZB6yTZQKbzbN3OIUW8U0kqu')),
             )
         ),
         );//dbms(),
@@ -287,7 +294,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('2 kph :)'),
+                title: Text(' UNIT 6 (not available) :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -295,7 +302,7 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1r4P3VVdicLVNRPVlH__vZOl0a4tiwJuo')),
+                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
             )
         ),
         );//dbms(),
@@ -311,7 +318,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('3 kph :)'),
+                title: Text('UNIT 1 kph :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -319,7 +326,7 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=14Ji79-PeRwZIQHzaCDMecJcv9B-7bBop')),
+                      'https://drive.google.com/uc?export=view&id=10zQsaDdFbBfh6DbTNsRfc29NQq_Wzfth')),
             )
         ),
         );//dbms(),
@@ -335,7 +342,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('4 kph :)'),
+                title: Text('UNIT 2 kph :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -343,7 +350,7 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1r39EG_uJJIfxJxELUGfjYNs8tYmscn-K')),
+                      'https://drive.google.com/uc?export=view&id=113_49Y7dU-_Jv0ETgT4i_6K83FicqiRH')),
             )
         ),
         );//dbms(),
@@ -359,7 +366,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('5 kph :)'),
+                title: Text('UNIT 3 kph :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -367,7 +374,7 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=14Rt5FGVDdi-XZHPn-XsL0Bj1M6upIR70')),
+                      'https://drive.google.com/uc?export=view&id=11A0Fc21MeQRDZtWXOvJmJCI78-8C1KP4')),
             )
         ),
         );//dbms(),
@@ -383,7 +390,7 @@ int a=0;
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('Previous yr papers :)'),
+                title: Text('UNIT 4 kph'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -391,132 +398,85 @@ int a=0;
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=11uNCjwTM-Qh_KF8XfE3MMeRPn8Lxz3QB')),
+                      'https://drive.google.com/uc?export=view&id=11C5Asz8ZZs2B1JzyGSGQUXz5ALx7WQPE')),
             )
         ),
         );//dbms(),
         break;
-      // case 11:
-      //   a = 11;
-      //   Navigator.of(context).push(MaterialPageRoute(
-      //       builder: (context) => Scaffold (
-      //         // backgroundColor: Colors.black,
-      //         appBar: AppBar(
-      //           leading: IconButton(
-      //               color: Colors.blueGrey,
-      //               icon: Icon(Icons.arrow_back, color: Colors.black87),
-      //               //onPressed: () => Navigator.popAndPushNamed(context, '/')),
-      //               onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-      //           title: Text(':)'),
-      //
-      //           centerTitle: true,
-      //           backgroundColor: Colors.blueGrey,
-      //         ),
-      //         body:
-      //         Container(
-      //             child: SfPdfViewer.network(
-      //                 'https://drive.google.com/uc?export=view&id=11D0lpzx4p7BcrGidfxgwK8q-pAWoswnR')),
-      //       )
-      //   ),
-      //   );//dbms(),
-      //   break;
-      // case 12:
-      //   a = 12;
-      //   Navigator.of(context).push(MaterialPageRoute(
-      //       builder: (context) => Scaffold (
-      //         // backgroundColor: Colors.black,
-      //         appBar: AppBar(
-      //           leading: IconButton(
-      //               color: Colors.blueGrey,
-      //               icon: Icon(Icons.arrow_back, color: Colors.black87),
-      //               //onPressed: () => Navigator.popAndPushNamed(context, '/')),
-      //               onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-      //           title: Text(':)'),
-      //
-      //           centerTitle: true,
-      //           backgroundColor: Colors.blueGrey,
-      //         ),
-      //         body:
-      //         Container(
-      //             child: SfPdfViewer.network(
-      //                 'https://drive.google.com/uc?export=view&id=11D0lpzx4p7BcrGidfxgwK8q-pAWoswnR')),
-      //       )
-      //   ),
-      //   );//dbms(),
+      case 11:
+        a = 11;
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => Scaffold (
+              // backgroundColor: Colors.black,
+              appBar: AppBar(
+                leading: IconButton(
+                    color: Colors.blueGrey,
+                    icon: Icon(Icons.arrow_back, color: Colors.black87),
+                    //onPressed: () => Navigator.popAndPushNamed(context, '/')),
+                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
+                title: Text('UNIT 5 kph :)'),
+
+                centerTitle: true,
+                backgroundColor: Colors.blueGrey,
+              ),
+              body:
+              Container(
+                  child: SfPdfViewer.network(
+                      'https://drive.google.com/uc?export=view&id=1r4xoCbUTN_tYAvGsXw-hqiuTNUGPwc5Z')),
+            )
+        ),
+        );//dbms(),
+        break;
+      case 12:
+        a = 12;
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => Scaffold (
+              // backgroundColor: Colors.black,
+              appBar: AppBar(
+                leading: IconButton(
+                    color: Colors.blueGrey,
+                    icon: Icon(Icons.arrow_back, color: Colors.black87),
+                    //onPressed: () => Navigator.popAndPushNamed(context, '/')),
+                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
+                title: Text('UNIT 6 kph:)'),
+
+                centerTitle: true,
+                backgroundColor: Colors.blueGrey,
+              ),
+              body:
+              Container(
+                  child: SfPdfViewer.network(
+                      'https://drive.google.com/uc?export=view&id=11D0lpzx4p7BcrGidfxgwK8q-pAWoswnR')),
+            )
+        ),
+        );
+
+        break;
+      case 13:
+        a = 12;
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => Scaffold (
+              // backgroundColor: Colors.black,
+              appBar: AppBar(
+                leading: IconButton(
+                    color: Colors.blueGrey,
+                    icon: Icon(Icons.arrow_back, color: Colors.black87),
+                    //onPressed: () => Navigator.popAndPushNamed(context, '/')),
+                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
+                title: Text('Previous Year Papers:)'),
+
+                centerTitle: true,
+                backgroundColor: Colors.blueGrey,
+              ),
+              body:
+              Container(
+                  child: SfPdfViewer.network(
+                      'https://drive.google.com/uc?export=view&id=10urSC4Gz-EOth48tDAu7P9n--3BwHHZ6')),
+            )
+        ),
+        );//dbms(),
 
     }
   }
 }
 
-  //
-  //
-  // class ecommunit extends StatelessWidget with cn {
-  //   final padding = EdgeInsets.symmetric(horizontal: 60);
-  //
-  //   @override
-  //    Widget build(BuildContext context) {
-  //     if (a == 1) {
-  //       return Scaffold (
-  //        // backgroundColor: Colors.black,
-  //         appBar: AppBar(
-  //           leading: IconButton(
-  //               color: Colors.blueGrey,
-  //               icon: Icon(Icons.arrow_back, color: Colors.black87),
-  //               //onPressed: () => Navigator.popAndPushNamed(context, '/')),
-  //         onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-  //             title: Text(':)'),
-  //
-  //           centerTitle: true,
-  //           backgroundColor: Colors.blueGrey,
-  //         ),
-  //         body:
-  //         Container(
-  //             child: SfPdfViewer.network(
-  //                 'https://drive.google.com/uc?export=view&id=10urSC4Gz-EOth48tDAu7P9n--3BwHHZ6')),
-  //       );
-  //
-  //     }
-  //     if (a == 2) {
-  //       return Scaffold (
-  //         // backgroundColor: Colors.black,
-  //         appBar: AppBar(
-  //           leading: IconButton(
-  //               color: Colors.blueGrey,
-  //               icon: Icon(Icons.arrow_back, color: Colors.black87),
-  //               //onPressed: () => Navigator.popAndPushNamed(context, '/')),
-  //               onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-  //           title: Text(':)'),
-  //
-  //           centerTitle: true,
-  //           backgroundColor: Colors.blueGrey,
-  //         ),
-  //         body:
-  //         Container(
-  //             child: SfPdfViewer.network(
-  //                 'https://drive.google.com/uc?export=view&id=11C5Asz8ZZs2B1JzyGSGQUXz5ALx7WQPE')),
-  //       );
-  //
-  //     }
-  //     else {
-  //       return Scaffold (
-  //
-  //         appBar: AppBar(
-  //           leading: IconButton(
-  //               color: Colors.blueGrey,
-  //               icon: Icon(Icons.arrow_back, color: Colors.black87),
-  //               onPressed: () => Navigator.popAndPushNamed(context, '/')),
-  //           title: Text(':)'),
-  //           centerTitle: true,
-  //           backgroundColor: Colors.blueGrey,
-  //         ),
-  //         body:
-  //         Container(
-  //             child: SfPdfViewer.network(
-  //                 'https://drive.google.com/uc?export=view&id=1kNrTLxbaOWcnOc_m63L8i23m55Pz7RsG')),
-  //       );
-  //
-  //     }
-  //   }
-  //
-  //
-  // }

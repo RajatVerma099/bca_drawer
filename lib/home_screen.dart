@@ -1,22 +1,16 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import 'login_screen.dart';
 import 'model/user_model.dart';
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
-
 class _HomeScreenState extends State<HomeScreen> {
   User? user = FirebaseAuth.instance.currentUser;
   UserModel loggedInUser = UserModel();
-
   @override
   void initState() {
     super.initState();
@@ -29,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
       setState(() {});
     });
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,8 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 150,
-                child: Image.asset("assets/logo.png", fit: BoxFit.contain),
+                height: 150,//'img/infinity.gif'
+                child: Image.asset('assets/logo.png', fit: BoxFit.contain),
               ),
               Text(
                 "Welcome Back",
@@ -79,7 +72,6 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
   // the logout function
   Future<void> logout(BuildContext context) async {
     await FirebaseAuth.instance.signOut();

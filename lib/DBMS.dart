@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-
 import 'main.dart';
-
 class dbms extends StatelessWidget {
   final padding = EdgeInsets.symmetric(horizontal: 60);
   int a=0;
@@ -35,31 +33,25 @@ class dbms extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 2 (not available)', //java
+                      text: 'Unit 2', //java
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 2),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 3 (not available)', //cn
+                      text: 'Unit 3', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 3),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 4 (not available)', //cn
+                      text: 'Unit 4 and 5', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 4),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Unit 5 (not available)', //cn
-                      icon: Icons.spa,
-                      onClicked: () => selectedItem(context, 5),
-                    ),
-                    const SizedBox(height: 16),
-                    buildMenuItem(
-                      text: 'Unit 6 (not available)', //cn
+                      text: 'Unit 6 ', //cn
                       icon: Icons.spa,
                       onClicked: () => selectedItem(context, 6),
                     ),
@@ -215,7 +207,7 @@ class dbms extends StatelessWidget {
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1Bts8Dq0PCQGU7JK6RLJidauBA-ubCthL')),
             )
         ),
         );//dbms(),
@@ -239,7 +231,7 @@ class dbms extends StatelessWidget {
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1BtQxvoZKCG90BEWc_YrJW4lLcIjhbDPr')),
             )
         ),
         );//dbms(),
@@ -255,7 +247,7 @@ class dbms extends StatelessWidget {
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text('UNIT 4 (not available) :)'),
+                title: Text('UNIT 4 and 5:)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -263,31 +255,7 @@ class dbms extends StatelessWidget {
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
-            )
-        ),
-        );//dbms(),
-        break;
-      case 5:
-        a = 5;
-        Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => Scaffold (
-              // backgroundColor: Colors.black,
-              appBar: AppBar(
-                leading: IconButton(
-                    color: Colors.blueGrey,
-                    icon: Icon(Icons.arrow_back, color: Colors.black87),
-                    //onPressed: () => Navigator.popAndPushNamed(context, '/')),
-                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text(' UNIT 5 (not available) :)'),
-
-                centerTitle: true,
-                backgroundColor: Colors.blueGrey,
-              ),
-              body:
-              Container(
-                  child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1Bu3XjPRkFJ438KIHpUjPmWs3VHpCZCGp')),
             )
         ),
         );//dbms(),
@@ -303,7 +271,7 @@ class dbms extends StatelessWidget {
                     icon: Icon(Icons.arrow_back, color: Colors.black87),
                     //onPressed: () => Navigator.popAndPushNamed(context, '/')),
                     onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: '')))),
-                title: Text(' UNIT 5 (not available) :)'),
+                title: Text(' UNIT 5  :)'),
 
                 centerTitle: true,
                 backgroundColor: Colors.blueGrey,
@@ -311,7 +279,7 @@ class dbms extends StatelessWidget {
               body:
               Container(
                   child: SfPdfViewer.network(
-                      'https://drive.google.com/uc?export=view&id=1qz4vArSJIV73rs2Oaou-8Lf9RIEPoRJt')),
+                      'https://drive.google.com/uc?export=view&id=1BrIRL5xt9dQZaEyeC5E9lxTqLxVEhsyO')),
             )
         ),
         );//dbms(),
